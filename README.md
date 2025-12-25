@@ -21,3 +21,25 @@ NexxoTech is a fully functional **e-commerce web application** designed for buyi
 ## Why Nexxo Tech ? 🤔
 
 NexxoTech provides a complete e-commerce solution with a focus on usability, convenience, and security. Whether you are a tech enthusiast looking for the latest gadgets or a seller wanting to reach customers online, NexxoTech makes the process fast, reliable, and enjoyable.
+
+## Project Preview 👀
+
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="preview_images/Create New Account.png" width="400"><br>
+      <b>Create New Account Page</b>
+    </td>
+    <td align="center">
+      <img src="preview_images/Sign In.png" width="400"><br>
+      <b>Sign In Page</b>
+    </td>
+    <td align="center">
+      <img src="preview_images/Home Side Bar.png" width="400"><br>
+      <b>Home Page</b>
+    </td>
+  </tr>
+</table>
+
+To view all UI previews, please visit the 📁 [`preview_images`](./preview_images) folder.
+
