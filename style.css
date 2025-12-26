@@ -1,0 +1,528 @@
+@font-face {
+    font-family: "Title-font";
+    src: url("fonts/Warpen.ttf");
+}
+
+* {
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+.style-font {
+    font-family: "Title-font";
+}
+
+.sign-in-bg {
+    background-image: url(images/SignIn-BG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.glass {
+    backdrop-filter: blur(15px);
+    background: rgb(255, 255, 255, 0.2);
+}
+
+.main-content-div {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.div-shadow {
+    box-shadow: 0px 1px 30px rgb(212, 212, 212);
+}
+
+.admin-div-shadow {
+    box-shadow: 0px 1px 30px rgb(204, 0, 255);
+}
+
+.text-blue {
+    color: rgb(24, 139, 255);
+}
+
+.text-pink {
+    color: rgb(225, 0, 255);
+}
+
+.text-green {
+    color: #22c55e;
+}
+
+.brand-title {
+    background: linear-gradient(#6812b8, #e23fc4);
+    /* color: linear-gradient(#8c00ff, #ff00c8); */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.name-label {
+    background: linear-gradient(#6812b828, #e23fc434);
+    /* background-color: #8c00ff1a; */
+    /* Light color for highlight */
+    padding: 2px 6px;
+    border-radius: 6px;
+    display: inline-block;
+}
+
+.message-link {
+    font-size: 19px;
+}
+
+.message-badge {
+    background-color: #202020;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 2px 7px;
+    border-radius: 50px;
+    margin-left: 6px;
+    vertical-align: middle;
+}
+
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background: #eee;
+}
+
+.mobile-profile-div {
+    background: rgba(255, 255, 255, 0.315);
+    border-radius: 20px;
+}
+
+.mobile-link-div {
+    background: rgba(255, 255, 255, 0.315);
+    border-radius: 20px;
+}
+
+.forgotten-password {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.forgotten-password:hover {
+    text-decoration: underline;
+}
+
+.brand-link-dive {
+    background: rgb(175, 175, 175);
+    transition: 0.3s;
+}
+
+.device-card {
+    background-color: rgba(235, 235, 235, 0.712);
+    transition: 0.5s;
+}
+
+.device-card:hover {
+    cursor: pointer;
+    background-color: rgb(197, 197, 197);
+}
+
+.device-card img {
+    transition: 0.5s;
+}
+
+.device-card img:hover {
+    transform: scale(1.1);
+}
+
+.profile-background {
+    background: url('images/Main-Background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.profile-page-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.profile-page-image:hover {
+    transform: scale(1.1);
+    background-color: rgb(255, 255, 255);
+}
+
+.profile-image {
+    cursor: pointer;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    width: 50px;
+    height: 50px;
+}
+
+.order-more-details-background {
+    background: url('images/order-more-details-background.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.watchlist-card {
+    position: relative;
+    height: 320px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.watchlist-product-image {
+    transition: 0.5s;
+}
+
+.watchlist-card .watchlist-product-image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.watchlist-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(5px);
+    height: 0;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.watchlist-card:hover .watchlist-content {
+    height: 100%;
+}
+
+.watchlist-card:hover .watchlist-product-image {
+    transform: scale(1.1);
+}
+
+.message-bg {
+    background-color: white;
+}
+
+.message-view-div {
+    height: 90%;
+    overflow: hidden;
+    overflow: auto;
+    overflow: overlay;
+}
+
+.message-view-div::-webkit-scrollbar {
+    width: 0rem;
+    height: 0rem;
+}
+
+.message-view-div::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: rgba(175, 13, 13, 0.267);
+}
+
+.customer-message {
+    background: linear-gradient(#6812b8, #e23fc4);
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 14px;
+    color: aliceblue;
+}
+
+.service-message {
+    background-color: #E6E5EB;
+    padding: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size: 14px;
+}
+
+
+.chat-container {
+    height: 100vh;
+}
+
+.customer-service {
+    border-right: 1px solid #ddd;
+    padding: 20px;
+}
+
+.chat-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 20px;
+}
+
+.messages {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.input-group {
+    margin-bottom: -15px;
+}
+
+.cs-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.cs-contact p {
+    margin-bottom: 5px;
+}
+
+.brand-background {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+.admin-signin-bg {
+    background-image: url(images/Admin-SignIn-BG.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.admin-signIn {
+    cursor: pointer;
+    transition: 0.5s;
+    color: black;
+}
+
+
+.admin-signIn:hover {
+    cursor: pointer;
+    background: linear-gradient(#8c00ff, #ff00c8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient {
+
+    background: linear-gradient(#8c00ff, #ff00c8);
+}
+
+.admin-logo-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.menu-button {
+    border: none;
+    height: 45px;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255, 0.5);
+    transition: 0.3s;
+}
+
+.menu-button:hover {
+    background-color: rgb(236, 236, 236);
+}
+
+.product-image {
+    object-fit: cover;
+    object-position: center;
+}
+
+.chat-div {
+
+    height: 85vh;
+    overflow: hidden;
+    overflow-y: scroll;
+
+}
+
+.chat-div::-webkit-scrollbar {
+    width: 0rem;
+    height: 0rem;
+}
+
+.chat-div::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    border-radius: 15px;
+}
+
+.chat-list {
+    background: #f8f8f8;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.chat-list:hover {
+    background-color: #e6e6e6;
+}
+
+.chat-profile-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.msg-count-div {
+    height: 25px;
+    width: 25px;
+    padding: 2px;
+    background: linear-gradient(#8c00ff, #ff00c8);
+}
+
+.message-div {
+    height: 85vh;
+    overflow: hidden;
+    overflow-y: scroll;
+
+}
+
+.message-div::-webkit-scrollbar {
+    width: 0rem;
+    height: 0rem;
+}
+
+.basic-search-view-div {
+    height: 90vh;
+    overflow: hidden;
+    overflow: auto;
+    overflow: overlay;
+}
+
+#load-message-section {
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#load-message-section::-webkit-scrollbar {
+    width: 0rem;
+    height: 0rem;
+}
+
+.basic-search-view-div::-webkit-scrollbar {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+.basic-search-view-div::-webkit-scrollbar-thumb {
+    border-radius: .5rem;
+    background-color: #0004;
+}
+
+.users-image {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.chat-section-profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.admin-customer-message {
+    background-color: #E6E5EB;
+    padding: 9px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    font-size: 14px;
+}
+
+.admin-service-message {
+    background: linear-gradient(#8c00ff, #ff00c8);
+    padding: 9px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 14px;
+    color: aliceblue;
+}
+
+.user-report-profile-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+#sidebar {
+    width: 400px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgb(255, 255, 255, 0.5);
+    padding-top: 20px;
+    transition: all 0.3s;
+}
+
+#sidebar.hide {
+    left: -400px;
+}
+
+#sidebar ul {
+    padding: 0;
+    list-style: none;
+}
+
+#sidebar ul li {
+    padding: 10px;
+    text-align: center;
+}
+
+#sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+#sidebar ul li a:hover {
+    background-color: #495057;
+}
+
+#main-content {
+    margin-left: 350px;
+    padding: 20px;
+    transition: all 0.3s;
+}
+
+#main-content.full-width {
+    margin-left: 0;
+}
+
+.toggle-btn {
+    position: fixed;
+    left: 340px;
+    top: 25px;
+    cursor: pointer;
+    transition: left 0.3s;
+}
+
+.toggle-btn.move-left {
+    left: 20px;
+}
